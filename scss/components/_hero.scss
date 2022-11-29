@@ -1,0 +1,106 @@
+.hero {
+  background-color: $default-gray;
+  padding-top: 144px;
+  padding-bottom: 95px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("./../images/bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("./../images/bg-mobile-x2.jpg");
+  }
+}
+
+.hero__title {
+  margin: auto;
+  margin-bottom: 16px;
+  width: 240px;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: calc(66 / 52);
+  text-align: center;
+  color: $light;
+}
+.hero__subtitle {
+  width: 240px;
+  font-size: 22px;
+  line-height: calc(37 / 22);
+  text-align: center;
+  color: $light;
+  margin: auto;
+  margin-bottom: 27px;
+}
+.hero__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: $green;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) {
+  .hero {
+    background-image: url("./../images/bg-tablet.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("./../images/bg-tablet-x2.jpg");
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: min(100%, 768px);
+    padding-top: 407px;
+    padding-bottom: 412px;
+    // background-image: url("/images/bg-desktop.jpg");
+  }
+  .hero__title {
+    font-size: 55px;
+    line-height: calc(66 / 55);
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .hero__subtitle {
+    width: auto;
+    margin-bottom: 29px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .hero {
+    width: min(100%, 1360px);
+    padding-top: 279px;
+    padding-bottom: 284px;
+    background-image: url("./../images/bg-desktop.jpg");
+  }
+  .hero__title {
+    width: auto;
+  }
+
+  .hero__subtitle {
+    width: auto;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("./../images/bg-desktop-x2.jpg");
+    }
+  }
+}
